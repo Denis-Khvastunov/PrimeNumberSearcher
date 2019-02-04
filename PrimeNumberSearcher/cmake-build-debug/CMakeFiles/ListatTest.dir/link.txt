@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread -g   CMakeFiles/ListatTest.dir/main.cpp.o CMakeFiles/ListatTest.dir/XMLparser.cpp.o CMakeFiles/ListatTest.dir/PrimeSearcher.cpp.o  -o ListatTest -lgtest -lgtest_main 

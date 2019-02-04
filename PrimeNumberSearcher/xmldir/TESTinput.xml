@@ -1,0 +1,14 @@
+<root>
+ <intervals>
+     <interval>
+         <low>-100</low>
+         <high>-400</high>
+     </interval>
+     <interval>
+     </interval>
+     <interval>
+         <low>nondigits</low>
+         <high>nondigit</high>
+     </interval>
+  </intervals>
+</root>

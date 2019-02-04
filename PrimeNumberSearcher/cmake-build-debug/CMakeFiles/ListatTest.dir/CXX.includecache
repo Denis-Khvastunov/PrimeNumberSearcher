@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/denis/CLionProjects/Listat/ListatTest/XMLparser.cpp
+XMLparser.h
+/home/denis/CLionProjects/Listat/ListatTest/XMLparser.h
+
+/home/denis/CLionProjects/Listat/ListatTest/XMLparser.h
+string
+-
+vector
+-
+iostream
+-
+fstream
+-
+

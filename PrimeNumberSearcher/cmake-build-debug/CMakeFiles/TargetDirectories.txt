@@ -1,0 +1,3 @@
+/home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/ListatTest.dir

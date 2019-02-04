@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_330fd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_330fd.dir/build.make CMakeFiles/cmTC_330fd.dir/build
+make[1]: вход в каталог «/home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_330fd.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_330fd.dir/CheckSymbolExists.c.o   -c /home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_330fd
+/home/denis/clion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_330fd.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_330fd.dir/CheckSymbolExists.c.o  -o cmTC_330fd 
+CMakeFiles/cmTC_330fd.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_330fd.dir/build.make:86: recipe for target 'cmTC_330fd' failed
+make[1]: *** [cmTC_330fd] Error 1
+make[1]: выход из каталога «/home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/CMakeTmp»
+Makefile:121: recipe for target 'cmTC_330fd/fast' failed
+make: *** [cmTC_330fd/fast] Error 2
+
+File /home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d8e82/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d8e82.dir/build.make CMakeFiles/cmTC_d8e82.dir/build
+make[1]: вход в каталог «/home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d8e82.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d8e82.dir/CheckFunctionExists.c.o   -c /home/denis/clion-2018.2.4/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d8e82
+/home/denis/clion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8e82.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d8e82.dir/CheckFunctionExists.c.o  -o cmTC_d8e82 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d8e82.dir/build.make:86: recipe for target 'cmTC_d8e82' failed
+make[1]: *** [cmTC_d8e82] Error 1
+make[1]: выход из каталога «/home/denis/CLionProjects/Listat/ListatTest/cmake-build-debug/CMakeFiles/CMakeTmp»
+Makefile:121: recipe for target 'cmTC_d8e82/fast' failed
+make: *** [cmTC_d8e82/fast] Error 2
+
+
